@@ -441,27 +441,7 @@ const Skills = () => {
               </div>
             </div>
 
-            {/* Skills Overview Grid */}
-            <div className="grid grid-cols-2 md:grid-cols-5 lg:grid-cols-10 gap-4">
-              {skillCategories.map((category, categoryIndex) => (
-                <div 
-                  key={categoryIndex}
-                  className={`p-4 rounded-xl text-center transition-all duration-300 cursor-pointer ${
-                    activeCategory === categoryIndex
-                      ? `bg-gradient-to-r ${category.color} text-white shadow-lg transform scale-105`
-                      : 'bg-white/10 backdrop-blur-sm hover:bg-white/20 border border-white/20'
-                  }`}
-                  onClick={() => setActiveCategory(categoryIndex)}
-                >
-                  <div className="mb-2 flex justify-center">
-                    {category.icon}
-                  </div>
-                  <div className="text-xs font-medium">
-                    {category.skills.length} Skills
-                  </div>
-                </div>
-              ))}
-            </div>
+         
           
           </div>
         </div>
