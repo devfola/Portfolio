@@ -282,8 +282,24 @@ const Hero = () => {
             {/* Social Links */}
             <div className="flex justify-center space-x-6">
               
-             
-
+              {[
+                { icon: Github, href: "https://github.com/intelliDean", color: "hover:text-gray-300", bg: "hover:bg-gray-700" },
+                { icon: Linkedin, href: "https://www.linkedin.com/in/michaeldean8ix/", color: "hover:text-blue-400", bg: "hover:bg-blue-600" },
+                { icon: Twitter, href: "https://x.com/Dean8IX", color: "hover:text-sky-400", bg: "hover:bg-sky-600" }
+              ].map((social, index) => {
+                const Icon = social.icon;
+                return (
+                  <a
+                    key={index}
+                    href={social.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={`group relative p-3 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 ${social.bg} hover:scale-110 transition-all duration-300`}
+                  >
+                    <Icon className={`w-6 h-6 text-gray-400 ${social.color} transition-colors duration-300`} />
+                  </a>
+                );
+              })}
               
             </div>
 
