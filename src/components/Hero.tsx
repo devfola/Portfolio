@@ -225,24 +225,24 @@ const Hero = () => {
 
           {/* Achievement Metrics */}
           <div className={`transition-all duration-1000 delay-600 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-            <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+            <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-12">
               {achievements.map((achievement, index) => {
                 const Icon = achievement.icon;
                 return (
                   <div
                     key={achievement.label}
-                    className="group relative p-8 rounded-3xl bg-white/5 backdrop-blur-sm border border-white/10 hover:bg-white/10 hover:scale-105 hover:border-white/20 transition-all duration-500 cursor-pointer"
+                    className="group relative p-4 rounded-2xl bg-white/5 backdrop-blur-sm border border-white/10 hover:bg-white/10 hover:scale-105 hover:border-white/20 transition-all duration-500 cursor-pointer"
                     style={{ animationDelay: achievement.delay }}
                   >
                     <div className={`absolute inset-0 rounded-3xl bg-gradient-to-r ${achievement.color} opacity-0 group-hover:opacity-10 blur-xl transition-all duration-500`}></div>
                     <div className="relative text-center">
-                      <div className={`inline-flex p-4 rounded-2xl bg-gradient-to-r ${achievement.color} bg-opacity-20 mb-4 group-hover:scale-110 transition-transform duration-300`}>
-                        <Icon className="w-8 h-8 text-white" />
+                      <div className={`inline-flex p-3 rounded-xl bg-gradient-to-r ${achievement.color} bg-opacity-20 mb-3 group-hover:scale-110 transition-transform duration-300`}>
+                        <Icon className="w-6 h-6 text-white" />
                       </div>
-                      <div className="text-3xl font-black text-white mb-2 group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:bg-clip-text group-hover:from-white group-hover:to-gray-300 transition-all duration-300">
+                      <div className="text-2xl font-black text-white mb-1 group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:bg-clip-text group-hover:from-white group-hover:to-gray-300 transition-all duration-300">
                         {achievement.value}
                       </div>
-                      <div className="text-lg font-semibold text-gray-300 mb-1">{achievement.label}</div>
+                      <div className="text-base font-semibold text-gray-300 mb-1">{achievement.label}</div>
                       <div className="text-sm text-gray-500 group-hover:text-gray-400 transition-colors duration-300">{achievement.description}</div>
                     </div>
                   </div>
