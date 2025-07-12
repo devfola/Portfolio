@@ -290,6 +290,17 @@ const Hero = () => {
                 return (
                   <a
                     key={index}
+                    href={social.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={`group relative p-3 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 ${social.bg} hover:scale-110 transition-all duration-300`}
+                  >
+                    <Icon className={`w-6 h-6 text-gray-400 ${social.color} transition-colors duration-300`} />
+                  </a>
+                );
+              })}
+            </div>
+          </div>
         </div>
       </div>
     </section>
