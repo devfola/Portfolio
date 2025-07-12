@@ -279,7 +279,13 @@ const Hero = () => {
               </a>
             </div>
 
-           
+            {/* Social Links */}
+            <div className="flex justify-center space-x-6">
+              
+             
+
+              
+            </div>
 
             
           </div>
