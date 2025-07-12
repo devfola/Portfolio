@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X, Sun, Moon } from 'lucide-react';
+import { Menu, X, Sun, Moon, Github, Linkedin, Twitter } from 'lucide-react';
 import { useTheme } from './ThemeProvider';
 import Logo from './Logo';
 
@@ -75,6 +75,29 @@ const Header = () => {
               </button>
             ))}
             
+            {/* Social Links */}
+            <div className="flex items-center space-x-3 ml-4 pl-4 border-l border-gray-200 dark:border-gray-700">
+              {[
+                { icon: Github, href: "https://github.com/intelliDean", label: "GitHub" },
+                { icon: Linkedin, href: "https://www.linkedin.com/in/michaeldean8ix/", label: "LinkedIn" },
+                { icon: Twitter, href: "https://x.com/Dean8IX", label: "Twitter" }
+              ].map((social, index) => {
+                const Icon = social.icon;
+                return (
+                  <a
+                    key={index}
+                    href={social.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="p-2 rounded-lg bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 hover:text-purple-600 dark:hover:text-purple-400 transition-all duration-200"
+                    title={social.label}
+                  >
+                    <Icon size={16} />
+                  </a>
+                );
+              })}
+            </div>
+            
             {/* Theme Toggle */}
             <button
               onClick={toggleTheme}
@@ -87,6 +110,29 @@ const Header = () => {
 
           {/* Mobile Menu Button */}
           <div className="md:hidden flex items-center space-x-2">
+            {/* Mobile Social Links */}
+            <div className="flex items-center space-x-1">
+              {[
+                { icon: Github, href: "https://github.com/intelliDean", label: "GitHub" },
+                { icon: Linkedin, href: "https://www.linkedin.com/in/michaeldean8ix/", label: "LinkedIn" },
+                { icon: Twitter, href: "https://x.com/Dean8IX", label: "Twitter" }
+              ].map((social, index) => {
+                const Icon = social.icon;
+                return (
+                  <a
+                    key={index}
+                    href={social.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="p-2 rounded-lg bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 hover:text-purple-600 dark:hover:text-purple-400 transition-all duration-200"
+                    title={social.label}
+                  >
+                    <Icon size={14} />
+                  </a>
+                );
+              })}
+            </div>
+            
             <button
               onClick={toggleTheme}
               className="p-2 rounded-lg bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"

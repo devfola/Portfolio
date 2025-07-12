@@ -290,27 +290,6 @@ const Hero = () => {
                 return (
                   <a
                     key={index}
-                    href={social.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className={`group p-4 rounded-2xl bg-white/5 backdrop-blur-sm border border-white/10 text-gray-400 ${social.color} hover:scale-110 hover:bg-white/10 hover:border-white/20 transition-all duration-300 shadow-lg hover:shadow-xl`}
-                  >
-                    <Icon className="w-7 h-7 group-hover:scale-110 transition-transform duration-300" />
-                  </a>
-                );
-              })}
-            </div>
-          </div>
-        </div>
-
-        {/* Scroll Indicator */}
-        <div className={`absolute bottom-8 left-1/2 transform -translate-x-1/2 transition-all duration-1000 delay-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-          <button
-            onClick={() => scrollToSection('about')}
-            className="group animate-bounce p-4 rounded-full bg-white/5 backdrop-blur-sm border border-white/10 text-gray-400 hover:text-white hover:bg-white/10 hover:border-white/20 transition-all duration-300"
-          >
-            <ArrowDown className="w-6 h-6 group-hover:scale-110 transition-transform duration-300" />
-          </button>
         </div>
       </div>
     </section>
