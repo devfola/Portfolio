@@ -266,12 +266,17 @@ const Hero = () => {
                 </span>
               </button>
               
-              <button className="group relative px-10 py-5 bg-white/10 backdrop-blur-sm border-2 border-white/20 rounded-2xl font-bold text-white text-lg hover:bg-white/20 hover:border-white/30 transform hover:scale-105 transition-all duration-300">
+              <a 
+                href="https://flowcv.com/resume/gnsu9bqkm4"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group relative px-10 py-5 bg-white/10 backdrop-blur-sm border-2 border-white/20 rounded-2xl font-bold text-white text-lg hover:bg-white/20 hover:border-white/30 transform hover:scale-105 transition-all duration-300 inline-flex items-center justify-center"
+              >
                 <span className="flex items-center justify-center">
                   <Download className="mr-3 w-6 h-6 group-hover:scale-110 transition-transform duration-300" />
                   Download Resume
                 </span>
-              </button>
+              </a>
             </div>
 
             {/* Social Links */}
