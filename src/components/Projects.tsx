@@ -189,12 +189,8 @@ const Projects = () => {
               </button>
               
               <div className="text-center">
-                <div className="text-white font-semibold text-base sm:text-lg mb-1">
-                  {activeProject + 1} of {projects.length}
-                </div>
-                <div className="text-gray-400 text-xs sm:text-sm">
-                  Featured Projects
-                </div>
+                
+              
               </div>
               
               <button
