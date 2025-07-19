@@ -268,9 +268,7 @@ const About = () => {
                     <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-white mb-2">
                       Michael Dean Oyewole
                     </h3>
-                    <p className="text-base lg:text-lg text-purple-300 mb-3">
-                      Senior Blockchain Engineer
-                    </p>
+                
                     <div className="flex items-center justify-center lg:justify-start gap-2 text-gray-300">
                       <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
                       <span className="text-xs sm:text-sm">Available for Revolutionary Projects</span>
