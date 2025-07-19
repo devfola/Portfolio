@@ -264,7 +264,20 @@ const About = () => {
                 {/* Professional Info Cards */}
                 <div className="space-y-3 lg:space-y-4">
                   
-                
+                  {/* Name and Title Card */}
+                  <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-4 lg:p-6 text-center lg:text-left group hover:bg-white/15 transition-all duration-300">
+                   
+                    <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-white mb-2">
+                      Michael Dean Oyewole
+                    </h3>
+                    
+                   
+                    
+                    <div className="flex items-center justify-center lg:justify-start gap-2 text-gray-300">
+                      <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
+                      <span className="text-xs sm:text-sm">Available for Revolutionary Projects</span>
+                    </div>
+                  </div>
           
                   
                   {/* Expertise Tags */}
