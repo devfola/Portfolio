@@ -403,20 +403,7 @@ const About = () => {
               <div className="bg-white/5 backdrop-blur-sm rounded-2xl lg:rounded-3xl p-6 lg:p-8 border border-white/20 relative overflow-hidden h-fit">
                 {/* Background decoration */}
                
-                <div className="relative">
-                                
-                  <div className="space-y-4 lg:space-y-6 mb-6 lg:mb-8">
-                 
-                </div>
-
-                  {/* Enhanced Call to Action */}
-                  <div className="text-center">
-                    <div className="inline-flex flex-col items-center gap-3">
-                    
-                      
-                    </div>
-                  </div>
-                </div>
+             
               </div>
 
              
