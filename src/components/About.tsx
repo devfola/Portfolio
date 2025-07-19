@@ -269,6 +269,11 @@ const About = () => {
                       Michael Dean Oyewole
                     </h3>
 
+                    
+                    <div className="flex items-center justify-center lg:justify-start gap-2 text-gray-300">
+                      <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
+                      <span className="text-xs sm:text-sm">Available for Revolutionary Projects</span>
+                    </div>
                      <h4 className="text-white font-semibold mb-3 lg:mb-4 text-center lg:text-left text-sm lg:text-base">Core Expertise</h4>
                     <div className="flex flex-wrap gap-2 justify-center lg:justify-start">
                       {['Protocol Engineering', 'Smart Contracts', 'DeFi', 'Layer 2', 'Security Audits', 'Gas Optimization'].map((skill, index) => (
@@ -280,10 +285,6 @@ const About = () => {
                           {skill}
                         </span>
                       ))}
-                    </div>
-                    <div className="flex items-center justify-center lg:justify-start gap-2 text-gray-300">
-                      <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
-                      <span className="text-xs sm:text-sm">Available for Revolutionary Projects</span>
                     </div>
                   </div>
           
