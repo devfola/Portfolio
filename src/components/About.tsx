@@ -41,7 +41,7 @@ const About = () => {
         {
           period: "2022 - Early Days",
           title: "Software Engineering",
-          description: "My journey into software engineering wasn’t easy — I started with Java, not the typical beginner-friendly languages like JavaScript. It was a steep learning curve, but I pushed through, built great projects, and collaborated with brilliant minds. Eventually, my drive for more meaningful impact led me to Web3, where I found my true space."
+          description: "My journey into software engineering wasn’t easy — I started with Java, not the typical beginner-friendly languages. It was a steep learning curve, but I pushed through, built great projects, and collaborated with brilliant minds. Eventually, my drive for more meaningful impact led me to Web3, where I found my true space."
         },
         {
           period: "2022-2024 - Protocol Engineering",
