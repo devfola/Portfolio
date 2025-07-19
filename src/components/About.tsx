@@ -286,7 +286,7 @@ const About = () => {
                   <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-4 lg:p-6">
                     <h4 className="text-white font-semibold mb-3 lg:mb-4 text-center lg:text-left text-sm lg:text-base">Core Expertise</h4>
                     <div className="flex flex-wrap gap-2 justify-center lg:justify-start">
-                      {['Protocol Engineering', 'ZK Research', 'Smart Contracts', 'DeFi', 'Full Stack Engineering',  'Database Manipulation','Security Audits', 'Gas Optimization'].map((skill, index) => (
+                      {['Protocol Engineering', 'ZK Research', 'Smart Contracts', 'DeFi', 'Full Stack Engineering',  'Database Management','Security Audits', 'Gas Optimization'].map((skill, index) => (
                         <span 
                           key={skill}
                           className="px-2 lg:px-3 py-1 bg-gradient-to-r from-purple-500/30 to-pink-500/30 text-purple-200 rounded-full text-xs font-medium border border-purple-400/30 hover:scale-105 transition-transform duration-300"
