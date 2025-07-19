@@ -406,41 +406,9 @@ const About = () => {
                 <div className="absolute bottom-0 left-0 w-24 h-24 bg-gradient-to-tr from-purple-400/10 to-pink-400/10 rounded-full blur-3xl"></div>
                 
                 <div className="relative">
-                  <div className="text-center mb-6 lg:mb-8">
-                  <h3 className="text-2xl lg:text-3xl xl:text-4xl font-bold text-white mb-3 lg:mb-4">
-                    Core <span className="bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent">Competencies</span>
-                  </h3>
-                  <p className="text-gray-300 text-sm lg:text-base">
-                    Specialized expertise across the full spectrum of blockchain development and protocol engineering
-                  </p>
-                </div>
-                
+                                
                   <div className="space-y-4 lg:space-y-6 mb-6 lg:mb-8">
-                  {highlights.map((highlight, index) => (
-                      <div key={index} className="group flex items-start gap-3 lg:gap-4 bg-white/10 backdrop-blur-sm p-4 lg:p-6 rounded-xl border border-white/20 hover:shadow-xl transition-all duration-300 hover:border-blue-400">
-                      {/* Background gradient animation */}
-                      <div className={`absolute inset-0 bg-gradient-to-br ${highlight.gradient} opacity-0 group-hover:opacity-5 transition-opacity duration-500`}></div>
-                      
-                        <div className={`bg-gradient-to-br ${highlight.gradient} p-2 lg:p-3 rounded-lg flex-shrink-0 group-hover:scale-110 transition-transform duration-300`}>
-                          <div className="text-white">{highlight.icon}</div>
-                        </div>
-                        
-                        <div className="flex-1">
-                            <div className="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-2 mb-2">
-                              <h4 className="text-sm lg:text-base font-bold text-white">
-                            {highlight.title}
-                              </h4>
-                              <span className={`px-2 py-1 bg-gradient-to-r ${highlight.gradient} bg-opacity-20 text-xs font-medium rounded-full text-white w-fit`}>
-                                {highlight.stats}
-                              </span>
-                            </div>
-                          
-                            <p className="text-gray-300 leading-relaxed text-xs lg:text-sm">
-                            {highlight.description}
-                          </p>
-                        </div>
-                    </div>
-                  ))}
+                 
                 </div>
 
                   {/* Enhanced Call to Action */}
