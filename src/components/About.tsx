@@ -39,9 +39,9 @@ const About = () => {
           description: "I was first introduced to programming in university through FORTRAN and Python — an experience that piqued my curiosity about what powers the world’s machines and systems. It wasn’t until a few years later that I fully immersed myself in software engineering."
         },
         {
-          period: "2020-2021 - Foundation Building",
-          title: "Smart Contract Mastery",
-          description: "Dove deep into Ethereum ecosystem, mastering Solidity and building my first DeFi protocols. Contributed to open-source projects and began understanding the intricacies of gas optimization and security patterns."
+          period: "2022 - Early Days",
+          title: "Software Engineering",
+          description: "My journey into software engineering wasn’t easy — I started with Java, not the typical beginner-friendly languages like JavaScript. It was a steep learning curve, but I pushed through, built great projects, and collaborated with brilliant minds. Eventually, my drive for more meaningful impact led me to Web3, where I found my true space."
         },
         {
           period: "2022-2024 - Protocol Engineering",
