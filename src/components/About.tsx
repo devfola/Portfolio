@@ -464,13 +464,7 @@ const About = () => {
                 <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-purple-400/10 to-pink-400/10 rounded-full blur-3xl"></div>
                 <div className="absolute bottom-0 left-0 w-24 h-24 bg-gradient-to-tr from-blue-400/10 to-cyan-400/10 rounded-full blur-3xl"></div>
                 
-                <div className="relative">
-                  <div className="text-center mb-6 lg:mb-8"></div>
-                  
-                  <div className="space-y-4 lg:space-y-6 mb-6 lg:mb-8"></div>
-
-                 
-                </div>
+                
               </div>
             </div>
           </div>
