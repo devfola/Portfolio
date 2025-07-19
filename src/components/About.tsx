@@ -83,10 +83,10 @@ const About = () => {
     impact: {
       title: "Measurable Contributions",
       metrics: [
-        { value: "$100M+", label: "Total Value Locked", description: "Across protocols I've architected" },
+        { value: "100+", label: "Smart Contracts", description: "Deployed with zero security incidents" },
         { value: "25+", label: "Smart Contracts", description: "Deployed with zero security incidents" },
-        { value: "95%", label: "Gas Optimization", description: "Average reduction in transaction costs" },
-        { value: "10K+", label: "TPS", description: "Peak throughput on Layer 2 solutions" }
+        { value: "95%", label: "Gas Optimization", description: "Average reduction achieved" },
+        { value: "10+", label: "Mainnet DApps", description: "Across different protocols" }
       ]
     }
   };
