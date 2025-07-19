@@ -34,9 +34,9 @@ const About = () => {
       title: "From Curiosity to Mastery",
       content: [
         {
-          period: "2019 - The Beginning",
-          title: "Bitcoin Whitepaper Revelation",
-          description: "My blockchain journey ignited when I first read Satoshi's Bitcoin whitepaper. The elegant solution to the double-spending problem without central authority was a paradigm shift that changed my entire perspective on digital systems."
+          period: "2016 - The Beginning",
+          title: "Introduction to Programming",
+          description: "I was first introduced to programming in university through FORTRAN and Python — an experience that piqued my curiosity about what powers the world’s machines and systems. It wasn’t until a few years later that I fully immersed myself in software engineering."
         },
         {
           period: "2020-2021 - Foundation Building",
