@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Code, Database, Shield, Zap, Layers, Settings, TestTube, Globe, Server, Wrench, ExternalLink } from 'lucide-react';
+import { Code, Database, Shield, Zap, Layers, Settings, TestTube, Globe, Server, Wrench, ExternalLink, ChevronLeft, ChevronRight } from 'lucide-react';
 
 const Skills = () => {
   const [activeCategory, setActiveCategory] = useState(0);
@@ -311,6 +311,14 @@ const Skills = () => {
     }
   ];
 
+  const nextCategory = () => {
+    setActiveCategory((prev) => (prev + 1) % skillCategories.length);
+  };
+
+  const prevCategory = () => {
+    setActiveCategory((prev) => (prev - 1 + skillCategories.length) % skillCategories.length);
+  };
+
   return (
     <section 
       id="skills" 
@@ -378,25 +386,6 @@ const Skills = () => {
               software engineering, and modern development practices.
             </p>
             
-            {/* Category Navigation */}
-            <div className="flex flex-wrap justify-center gap-1 sm:gap-2 mb-8 lg:mb-12 px-4 sm:px-0">
-              {skillCategories.map((category, index) => (
-                <button
-                  key={index}
-                  onClick={() => setActiveCategory(index)}
-                  className={`flex items-center gap-1 sm:gap-2 px-2 sm:px-3 lg:px-4 py-1 sm:py-2 rounded-full text-xs sm:text-sm font-medium transition-all duration-300 ${
-                    activeCategory === index
-                      ? `bg-gradient-to-r ${category.color} text-white shadow-lg transform scale-105`
-                      : 'bg-white/10 backdrop-blur-sm text-gray-300 hover:bg-white/20 border border-white/20'
-                  }`}
-                  aria-pressed={activeCategory === index}
-                >
-                  <span className="w-3 h-3 sm:w-4 sm:h-4">{category.icon}</span>
-                  <span className="hidden sm:inline">{category.title}</span>
-                </button>
-              ))}
-            </div>
-
             {/* Active Category Display */}
             <div className="mb-8 lg:mb-12 px-4 sm:px-0">
               <div className="bg-white/10 backdrop-blur-sm border-2 border-white/20 rounded-xl lg:rounded-2xl p-4 sm:p-6 lg:p-8 transition-all duration-500">
@@ -441,8 +430,33 @@ const Skills = () => {
               </div>
             </div>
 
-         
-          
+            {/* Navigation Controls */}
+            <div className="flex justify-center items-center gap-4 sm:gap-6 lg:gap-8 px-4 sm:px-0">
+              <button
+                onClick={prevCategory}
+                className="group bg-white/10 backdrop-blur-sm p-3 sm:p-4 rounded-full border border-white/20 hover:bg-white/20 hover:border-white/30 transition-all duration-300 transform hover:scale-110"
+                title="Previous Category"
+              >
+                <ChevronLeft size={20} className="text-gray-300 group-hover:text-white transition-colors duration-300 sm:w-6 sm:h-6" />
+              </button>
+              
+              <div className="text-center">
+                <div className="text-white font-semibold text-sm sm:text-base lg:text-lg mb-1">
+                  {skillCategories[activeCategory].title}
+                </div>
+                <div className="text-gray-400 text-xs sm:text-sm">
+                  {activeCategory + 1} of {skillCategories.length}
+                </div>
+              </div>
+              
+              <button
+                onClick={nextCategory}
+                className="group bg-white/10 backdrop-blur-sm p-3 sm:p-4 rounded-full border border-white/20 hover:bg-white/20 hover:border-white/30 transition-all duration-300 transform hover:scale-110"
+                title="Next Category"
+              >
+                <ChevronRight size={20} className="text-gray-300 group-hover:text-white transition-colors duration-300 sm:w-6 sm:h-6" />
+              </button>
+            </div>
           </div>
         </div>
       </div>
