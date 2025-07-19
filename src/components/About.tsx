@@ -402,9 +402,7 @@ const About = () => {
               {/* Core Competencies */}
               <div className="bg-white/5 backdrop-blur-sm rounded-2xl lg:rounded-3xl p-6 lg:p-8 border border-white/20 relative overflow-hidden h-fit">
                 {/* Background decoration */}
-                <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-blue-400/10 to-cyan-400/10 rounded-full blur-3xl"></div>
-                <div className="absolute bottom-0 left-0 w-24 h-24 bg-gradient-to-tr from-purple-400/10 to-pink-400/10 rounded-full blur-3xl"></div>
-                
+               
                 <div className="relative">
                                 
                   <div className="space-y-4 lg:space-y-6 mb-6 lg:mb-8">
