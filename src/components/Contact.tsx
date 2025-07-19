@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import emailjs from '@emailjs/browser';
 import { Mail, Phone, MapPin, Send, Github, Linkedin, Twitter } from 'lucide-react';
 
 const Contact = () => {
@@ -8,6 +9,8 @@ const Contact = () => {
     subject: '',
     message: ''
   });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({
@@ -18,10 +21,35 @@ const Contact = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission here
-    console.log('Form submitted:', formData);
-    // Reset form
-    setFormData({ name: '', email: '', subject: '', message: '' });
+    setIsSubmitting(true);
+    setSubmitStatus('idle');
+
+    // EmailJS configuration
+    const serviceId = 'YOUR_SERVICE_ID'; // Replace with your EmailJS service ID
+    const templateId = 'YOUR_TEMPLATE_ID'; // Replace with your EmailJS template ID
+    const publicKey = 'YOUR_PUBLIC_KEY'; // Replace with your EmailJS public key
+
+    const templateParams = {
+      from_name: formData.name,
+      from_email: formData.email,
+      subject: formData.subject,
+      message: formData.message,
+      to_email: 'o.michaeldean@gmail.com'
+    };
+
+    emailjs.send(serviceId, templateId, templateParams, publicKey)
+      .then((response) => {
+        console.log('Email sent successfully:', response);
+        setSubmitStatus('success');
+        setFormData({ name: '', email: '', subject: '', message: '' });
+      })
+      .catch((error) => {
+        console.error('Email sending failed:', error);
+        setSubmitStatus('error');
+      })
+      .finally(() => {
+        setIsSubmitting(false);
+      });
   };
 
   const contactInfo = [
@@ -234,11 +262,37 @@ const Contact = () => {
                 
                 <button
                   type="submit"
-                  className="w-full bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white font-medium py-3 lg:py-4 px-6 rounded-lg transition-all flex items-center justify-center gap-2 transform hover:scale-105 shadow-lg text-sm sm:text-base"
+                  disabled={isSubmitting}
+                  className={`w-full font-medium py-3 lg:py-4 px-6 rounded-lg transition-all flex items-center justify-center gap-2 shadow-lg text-sm sm:text-base ${
+                    isSubmitting 
+                      ? 'bg-gray-400 cursor-not-allowed' 
+                      : 'bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white transform hover:scale-105'
+                  }`}
                 >
-                  <Send size={16} className="lg:w-5 lg:h-5" />
-                  Send Message
+                  {isSubmitting ? (
+                    <>
+                      <div className="animate-spin rounded-full h-4 w-4 border-b-2 border-white"></div>
+                      Sending...
+                    </>
+                  ) : (
+                    <>
+                      <Send size={16} className="lg:w-5 lg:h-5" />
+                      Send Message
+                    </>
+                  )}
                 </button>
+                
+                {/* Status Messages */}
+                {submitStatus === 'success' && (
+                  <div className="mt-4 p-4 bg-green-500/20 border border-green-500/30 rounded-lg text-green-300 text-center">
+                    ✅ Message sent successfully! I'll get back to you soon.
+                  </div>
+                )}
+                {submitStatus === 'error' && (
+                  <div className="mt-4 p-4 bg-red-500/20 border border-red-500/30 rounded-lg text-red-300 text-center">
+                    ❌ Failed to send message. Please try again or contact me directly.
+                  </div>
+                )}
               </form>
             </div>
           </div>
