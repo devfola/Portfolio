@@ -412,13 +412,8 @@ const About = () => {
                   {/* Enhanced Call to Action */}
                   <div className="text-center">
                     <div className="inline-flex flex-col items-center gap-3">
-                      <button className="group bg-gradient-to-r from-blue-600 via-cyan-600 to-teal-600 text-white px-4 lg:px-6 py-2 lg:py-3 rounded-xl font-semibold hover:from-blue-700 hover:via-cyan-700 hover:to-teal-700 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl flex items-center gap-2 text-xs lg:text-sm">
-                        <span>Explore Technical Expertise</span>
-                        <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform duration-300" />
-                      </button>
-                      <div className="text-xs text-gray-400">
-                        Discover my technical capabilities
-                      </div>
+                    
+                      
                     </div>
                   </div>
                 </div>
