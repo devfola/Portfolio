@@ -44,14 +44,14 @@ const About = () => {
           description: "My journey into software engineering wasn’t easy — I started with Java, not the typical beginner-friendly languages. It was a steep learning curve, but I pushed through, built great projects, and collaborated with brilliant minds. Eventually, my drive for more meaningful impact led me to Web3, where I found my true space."
         },
         {
-          period: "2022-2024 - Blockchain",
+          period: "2023 - Blockchain",
           title: "Smart Contract Engineering",
           description: "My journey into Web3 was rigorous, with a much steeper learning curve than Web2. It required unlearning familiar patterns, embracing entirely new paradigms, and adapting quickly. Given how fast-paced the space is, I had to learn rapidly and stay curious to seize the opportunities it offers."
         },
         {
-          period: "2025 - Innovation Leadership",
-          title: "Shaping the Future",
-          description: "Leading cross-functional teams in building next-generation blockchain infrastructure. Focusing on zero-knowledge proofs, account abstraction, and sustainable blockchain solutions."
+          period: "2025 - Advance",
+          title: "Protocol Engineering",
+          description: "I’m constantly expanding my knowledge, knowing there’s always room for growth. I’ve taken courses in Zero-Knowledge Proofs and Protocol Engineering, and I continue to explore new ways to contribute meaningfully to the blockchain space"
         }
       ]
     },
