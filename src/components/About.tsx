@@ -474,40 +474,12 @@ const About = () => {
                     </p>
                   </div>
                   
-                  <div className="space-y-4 lg:space-y-6 mb-6 lg:mb-8">
-                    {achievements.map((achievement, index) => (
-                      <div key={index} className="group flex items-start gap-3 lg:gap-4 bg-white/10 backdrop-blur-sm p-4 lg:p-6 rounded-xl border border-white/20 hover:shadow-xl transition-all duration-300 hover:border-purple-400">
-                        <div className="bg-gradient-to-br from-green-500 to-teal-500 p-2 lg:p-3 rounded-lg text-white flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
-                          {achievement.icon}
-                        </div>
-                        <div className="flex-1">
-                          <div className="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-2 mb-2">
-                            <h4 className="text-sm lg:text-base font-bold text-white">
-                              {achievement.title}
-                            </h4>
-                            <span className="px-2 py-1 bg-gradient-to-r from-green-500/20 to-teal-500/20 text-green-300 text-xs font-medium rounded-full w-fit">
-                              {achievement.badge}
-                            </span>
-                          </div>
-                          <p className="text-gray-300 leading-relaxed text-xs lg:text-sm">
-                            {achievement.description}
-                          </p>
-                        </div>
-                      </div>
-                    ))}
-                  </div>
+                  <div className="space-y-4 lg:space-y-6 mb-6 lg:mb-8"></div>
 
                   {/* Enhanced Call to Action */}
                   <div className="text-center">
-                    <div className="inline-flex flex-col items-center gap-3">
-                      <button className="group bg-gradient-to-r from-purple-600 via-pink-600 to-blue-600 text-white px-4 lg:px-6 py-2 lg:py-3 rounded-xl font-semibold hover:from-purple-700 hover:via-pink-700 hover:to-blue-700 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl flex items-center gap-2 text-xs lg:text-sm">
-                        <span>Let's Build Something Revolutionary</span>
-                        <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform duration-300" />
-                      </button>
-                      <div className="text-xs text-gray-400">
-                        Ready to discuss your next blockchain project?
-                      </div>
-                    </div>
+                    <div className="inline-flex flex-col items-center gap-3"> </div>
+                    
                   </div>
                 </div>
               </div>
