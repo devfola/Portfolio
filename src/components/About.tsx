@@ -465,22 +465,11 @@ const About = () => {
                 <div className="absolute bottom-0 left-0 w-24 h-24 bg-gradient-to-tr from-blue-400/10 to-cyan-400/10 rounded-full blur-3xl"></div>
                 
                 <div className="relative">
-                  <div className="text-center mb-6 lg:mb-8">
-                    <h3 className="text-2xl lg:text-3xl xl:text-4xl font-bold text-white mb-3 lg:mb-4">
-                      Key <span className="bg-gradient-to-r from-green-600 to-teal-600 bg-clip-text text-transparent">Achievements</span>
-                    </h3>
-                    <p className="text-gray-300 text-sm lg:text-base">
-                      Proven track record of delivering innovative blockchain solutions that drive real-world impact
-                    </p>
-                  </div>
+                  <div className="text-center mb-6 lg:mb-8"></div>
                   
                   <div className="space-y-4 lg:space-y-6 mb-6 lg:mb-8"></div>
 
-                  {/* Enhanced Call to Action */}
-                  <div className="text-center">
-                    <div className="inline-flex flex-col items-center gap-3"> </div>
-                    
-                  </div>
+                 
                 </div>
               </div>
             </div>
