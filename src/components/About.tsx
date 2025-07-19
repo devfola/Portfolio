@@ -268,7 +268,19 @@ const About = () => {
                     <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-white mb-2">
                       Michael Dean Oyewole
                     </h3>
-                
+
+                     <h4 className="text-white font-semibold mb-3 lg:mb-4 text-center lg:text-left text-sm lg:text-base">Core Expertise</h4>
+                    <div className="flex flex-wrap gap-2 justify-center lg:justify-start">
+                      {['Protocol Engineering', 'Smart Contracts', 'DeFi', 'Layer 2', 'Security Audits', 'Gas Optimization'].map((skill, index) => (
+                        <span 
+                          key={skill}
+                          className="px-2 lg:px-3 py-1 bg-gradient-to-r from-purple-500/30 to-pink-500/30 text-purple-200 rounded-full text-xs font-medium border border-purple-400/30 hover:scale-105 transition-transform duration-300"
+                          style={{animationDelay: `${index * 0.1}s`}}
+                        >
+                          {skill}
+                        </span>
+                      ))}
+                    </div>
                     <div className="flex items-center justify-center lg:justify-start gap-2 text-gray-300">
                       <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
                       <span className="text-xs sm:text-sm">Available for Revolutionary Projects</span>
